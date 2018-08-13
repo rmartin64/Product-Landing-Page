@@ -1,0 +1,175 @@
+
+#header{
+position: fixed;
+left: 0;
+top: 0;  
+display: flex;
+  white-space: nowrap;
+align-items: center;
+background-color: #FFFEEF;
+justify-content: space-between;
+  width: 100%;
+  height: 5em;
+  font-size: 100%;
+}
+#header-img{
+  width: 5em;
+  height: auto;
+}
+#company{
+margin-right: auto;
+  font-size: 2em;
+  font-family: garamond;
+}
+.nav-link{
+padding: 0 5em;
+}
+a{
+  text-decoration: none;
+  color: #000000;
+}
+body{
+  font-size: 100%;
+  background-color: #FFFEEF;
+  font-family: helvetica;
+}
+#firstsection{
+  margin-top: 6em;
+  flex-direction: column;
+  align-items: center;
+  display: flex;   
+}
+#form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#email{
+  width: 150%;
+  padding: 0.3em;
+}
+#submit{
+  width: 70%;
+  padding: 0.4em;
+  font-weight: bold;
+  margin-top: 1.2em;
+  border: none;
+  border-radius: 0.3em;
+  color: #FFFEEF;
+  background-color: #784421;
+}
+#quality{
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.attribute{
+ margin: 0 20%;
+}
+#video{
+width: 40em;
+height: 22.5em;
+  border: none;
+}
+#aspect{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em;
+}
+h3, h4, h5{
+  font-weight: normal;
+}
+#price{
+display: grid;
+  grid-template-columns: 1fr 1fr;
+ margin: 2em 5em;
+  grid-column-gap: 1em;
+  text-align: center;
+  
+}
+.roast {
+  border: 0.08em solid #784421;
+  border-radius: 0.2em;
+padding: 0 0.4em 1em 0.4em;
+}
+.purchase{
+  width: 8em;
+  padding: 0.8em;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.3em;
+  color: #FFFEEF;
+  background-color: #784421;
+}
+#copyright{
+text-align: left;
+  width: 100%;
+  bottom: 0;
+ background-color: #FFFBE5;
+ padding: 0.1em 0.1em 0.2em 0.1em;
+}
+#rights{
+  margin-top: -1em;
+}
+@media (max-width: 900px){
+  #header{
+    white-space: normal;
+  }
+  .nav-link{
+    padding: 0em 1em;
+  }
+  .attribute{
+    margin: 0 5%;
+  }
+}
+@media (max-width: 601px){
+  #header{
+    white-space: normal;
+  }
+ #nav-bar{
+  display: flex;
+  flex-direction: column;
+}
+  #company{
+  font-size: 2em;
+  font-family: garamond;
+} 
+  .nav-link{
+    padding: 0.3em 1em;
+  }
+  #firstsection{
+    text-align: center;
+    flex-wrap: wrap;
+}
+  #email{
+    width: 100%;
+  }
+  #submit{
+    width: 8em;
+  }
+  .attribute{
+    margin: 0;
+  }
+  #video{
+width: 20em;
+    height: 11.25em;
+  border: none;
+}
+  #price{
+display: grid;
+  grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1em; 
+  text-align: center;
+    width: 70%;
+    margin: auto;
+}
+  .roast{
+    grid-column: span 2;
+  }
+  #copyright{
+    margin-top: 1em;
+  }
+}
